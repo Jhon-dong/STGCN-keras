@@ -23,3 +23,10 @@ $ python main.py
 ## Reference
 
 Yu B, Yin H, Zhu Z. Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting[J]. arXiv preprint arXiv:1709.04875, 2017.
+
+## Follow us
+
+Knowledge-Precipitation-Tribe
+
+![qrcode](https://github.com/Knowledge-Precipitation-Tribe/Knowledge-Precipitation-Tribe/blob/master/qrcode.jpg)
+
