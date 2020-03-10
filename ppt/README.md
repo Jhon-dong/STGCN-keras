@@ -106,6 +106,10 @@ STGCN比其他方法更准确地捕捉到了高峰时间的趋势，而且它比
 
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment3.png)
 
+在Titan XP双卡i7-8700K，12核32G的配置下，bathc_size为50的情况下，一个epoch训练时间大概在8秒左右。
+
+![learning_rate](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/train.png)
+
 在tensorboard中我们也可一看到在训练过程中的学习率与train_loss的变化。
 
 ![learning_rate](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/learning_rate.png)
