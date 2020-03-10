@@ -50,7 +50,7 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 模型的总体结构我们可以通过tensorboard来查看
 
-![model](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model.html)
+![model](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model.png)
 
 ## 实验
 
@@ -70,7 +70,9 @@ PeMSD7网址：http://pems.dot.ca.gov/?dnode=Clearinghouse
 
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment3.png)
 
+![learning_rate](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/learning_rate.png)
 
+![tarin_loss](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/train_loss.png)
 
 ## 参考文献
 
