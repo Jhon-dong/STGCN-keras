@@ -10,17 +10,21 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 ## 前人工作
 
+在这篇论文之前也有几种交通预测的方法：动态建模，数据驱动到后来的深度学习的一些方法。但是传统的方法都是将数据看作是网格数据。
+
 ![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work1.jpeg)
 
 ![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work2.jpeg)
 
+请见参考文献[1]，[2]
+
 ![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work3.png)
 
-![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work4.png)
-
-下面两个图片来自参考文献[1]，[2]。
-
 ## 本篇论文提出的解决方法
+
+首先将网格数据改为图数据作为输入，图我们都知道可以用邻接矩阵来表示，就像图中的W就是图的邻接矩阵，实验中使用的数据集PeMSD7(M)共有228个数据点，相当于一个具有228个顶点的图，因为这个模型主要是对速度进行预测，所以每个顶点只有一个维度的数据就是：速度。
+
+之后提出了一个结构ST-Conv Block来对时空进行建模。
 
 ![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/method.jpeg)
 
@@ -29,7 +33,6 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 [动态理解图卷积](https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network#动态理解图卷积)
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network/blob/master/images/GCN4.gif" width = "300" height = "240" alt="axis" align=center /></div>
-
 ![model1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model1.jpeg)
 
 ![model2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model2.jpeg)
@@ -61,7 +64,6 @@ Dataset Description：two real-world traffic datasets, BJER4 and PeMSD7, collect
 PeMSD7网址：http://pems.dot.ca.gov/?dnode=Clearinghouse
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/PeMSD71.png" width = "300" height = "240" alt="axis" align=center /></div>
-
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/PeMSD72.png)
 
 ![PeMSD72](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment1.png)
