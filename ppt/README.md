@@ -121,3 +121,9 @@ STGCN比其他方法更准确地捕捉到了高峰时间的趋势，而且它比
 [1] [Deep Spatio-Temporal Residual Networks for Citywide Crowd Flows Prediction](https://arxiv.org/pdf/1610.00081.pdf)
 
 [2] [UrbanFM: Inferring Fine-Grained Urban Flows](https://arxiv.org/pdf/1902.05377.pdf)
+
+
+
+欢迎关注我们的公众号：知识沉淀部落
+
+![qrcode](https://github.com/Knowledge-Precipitation-Tribe/Knowledge-Precipitation-Tribe/blob/master/qrcode.jpg)
