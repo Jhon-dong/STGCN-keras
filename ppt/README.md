@@ -55,9 +55,15 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 ### ST-Conv Block
 
-将以上的图卷积和门控CNN组合成如图所示的结构
+将以上的图卷积和门控CNN组合成如图所示的结构，其中使用了瓶颈策略来实现尺度压缩和特征压缩。并在每层之后接归一化层来防止过拟合。
+
+ST-Conv Block的公式就是图的另一个解释，输入数据先做时间维度卷积，输出结果再做图卷积，图卷积的输出结果经过一个RELU，在进行一个时间维度卷积，就是整个ST-Conv Block的输出。
 
 ![model4](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model4.jpeg)
+
+### Model
+
+最后的模型是堆叠两个St-Conv Block之后接一个输出层，其中输出层首先用时间维度的卷积将之前的输出数据的时间维度进行合并，合并之后在经过一个卷积输出最终的预测数据，预测数据就是下一个时间维度的一张图[1,228,1]。
 
 ![modelk5](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model5.jpeg)
 
