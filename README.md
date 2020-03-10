@@ -1,7 +1,7 @@
 # STGCN-keras
 This is a Keras implementation of Spatio-Temporal Graph Convolutional Networks(STGCN) model from the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting](https://arxiv.org/pdf/1709.04875.pdf)"
 
-> **详解请看[STGCN](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/tree/master/ppt)**
+> **本篇论文详解请看[STGCN](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/tree/master/ppt)**
 
 ## Model architecture
 
