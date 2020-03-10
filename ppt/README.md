@@ -33,11 +33,23 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 图卷积的相关内容请见：[动态理解图卷积](https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network#动态理解图卷积)
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network/blob/master/images/GCN4.gif" width = "300" height = "240" alt="axis" align=center /></div>
+### Graph CNNs for Extracting Spatial Features
 
+首先使用图卷积来捕获空间相关性，本篇论文采用的是切比雪夫近似与一阶近似后的图卷积公式，我们只看最终的那个卷积公式，其中D为图的度矩阵，A_hat为图的邻接矩阵+单位矩阵，为的是在卷积过程中不仅考虑邻居节点的状态，也考虑自身的状态。
 
 ![model1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model1.jpeg)
 
+### Gated CNNs for Extracting Temporal Features
+
+在时间维度上采用门控卷积来捕获时间依赖性，而且与传统的卷积方法不同，因为这要考虑时间序列的问题，所以这里采用的是因果卷积。因为我们使用卷积操作，就不用像以前的采用RNN的方法依赖于之前的输出，所以我们可以对数据进行并行计算，这样使得模型训练速度更快。
+
+而且采用还采用了GLU操作，GLU是在这篇论文中提出的：[Language Modeling with Gated Convolutional Networks](https://arxiv.org/pdf/1612.08083.pdf)。在STGCN这篇论文中作者并没有对此进行过多的解释，我的理解是采用这种操作可以缓解梯度消失等现象还可以保留模型的非线性能力。
+
 ![model2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model2.jpeg)
+
+而且我们可以看到模型的运行效果也与论文中的描述一致，当考虑时间维度上的Kt个邻居时输出序列的长度就会减少Kt-1。在代码中Kt为3，输入的时间维度是12，卷积之后的数据结果就为10。
+
+
 
 ![model3](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model3.png)
 
