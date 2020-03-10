@@ -14,6 +14,22 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 ![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work2.jpeg)
 
+![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work3.png)
+
+![Previous_work2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/Previous_work4.png)
+
+下面两个图片来自参考文献[1]，[2]。
+
+## 本篇论文提出的解决方法
+
+
+
+## 模型架构
+
+[动态理解图卷积](https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network#动态理解图卷积)
+
+<div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network/blob/master/images/GCN4.gif" width = "300" height = "240" alt="axis" align=center /></div>
+
 
 
 
