@@ -30,15 +30,17 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network/blob/master/images/GCN4.gif" width = "300" height = "240" alt="axis" align=center /></div>
 
-![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model1.jpeg)
+![model1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model1.jpeg)
 
-![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model2.jpeg)
+![model2](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model2.jpeg)
 
-![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model3.jpeg)
+![model3](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model3.jpeg)
 
-![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model4.jpeg)
+![model4](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model4.jpeg)
 
-![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model5.jpeg)
+![modelk5](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model5.jpeg)
+
+![model6](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model6.png)
 
 ### 模型总结
 
