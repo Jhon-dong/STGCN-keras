@@ -63,7 +63,7 @@ ST-Conv Block的公式就是图的另一个解释，输入数据先做时间维�
 
 ### Model
 
-最后的模型是堆叠两个St-Conv Block之后接一个输出层，其中输出层首先用时间维度的卷积将之前的输出数据的时间维度进行合并，合并之后在经过一个卷积输出最终的预测数据，预测数据就是下一个时间维度的一张图[1,228,1]。
+最后的模型是堆叠两个St-Conv Block之后接一个输出层，其中输出层首先用时间维度的卷积将之前的输出数据的时间维度进行合并，合并之后在经过一个卷积输出最终的预测数据，预测数据就是下一个时间维度的一张图[1,228,1]。模型采用的是L2损失。
 
 ![modelk5](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model5.jpeg)
 
@@ -88,13 +88,25 @@ Dataset Description：two real-world traffic datasets, BJER4 and PeMSD7, collect
 PeMSD7网址：http://pems.dot.ca.gov/?dnode=Clearinghouse
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/PeMSD71.png" width = "300" height = "240" alt="axis" align=center /></div>
+图示为PeMSD7首页展示的路网。
+
+对于PeMSD7分为两个数据：PeMSD7(M)和PeMSD7(L)。因为是每五分钟汇总一次数据，故一小时会产生12条数据，所以一天会产生288条数据
+
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/PeMSD72.png)
+
+在PeMSD7上，可以看到STGCN与其他几个模型相比效果还是很好的。
 
 ![PeMSD72](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment1.png)
 
+STGCN比其他方法更准确地捕捉到了高峰时间的趋势，而且它比其他模型更早察觉到高峰时间的结束。
+
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment2.png)
 
+而且作者也用STGCN与GCGRU进行了对比，可以看到STGCN具有很高的计算效率。
+
 ![experiment1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/experiment3.png)
+
+在tensorboard中我们也可一看到在训练过程中的学习率与train_loss的变化。
 
 ![learning_rate](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/learning_rate.png)
 
