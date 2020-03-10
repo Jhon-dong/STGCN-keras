@@ -22,7 +22,7 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 ## 本篇论文提出的解决方法
 
-
+![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/method.jpeg)
 
 ## 模型架构
 
@@ -30,7 +30,7 @@ the paper "[Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framew
 
 <div align = "center"><image src="https://github.com/Knowledge-Precipitation-Tribe/Graph-neural-network/blob/master/images/GCN4.gif" width = "300" height = "240" alt="axis" align=center /></div>
 
-
+![Previous_work1](https://github.com/Knowledge-Precipitation-Tribe/STGCN-keras/blob/master/ppt/images/model1.jpeg)
 
 
 
