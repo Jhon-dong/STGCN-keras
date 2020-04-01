@@ -26,6 +26,14 @@ $ python main.py
 
 Yu B, Yin H, Zhu Z. Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting[J]. arXiv preprint arXiv:1709.04875, 2017.
 
+
+
+## Other implementations
+
+[1] TensorFlow：[VeritasYin](https://github.com/VeritasYin)/**[STGCN_IJCAI-18](https://github.com/VeritasYin/STGCN_IJCAI-18)**
+
+[2] mxnet：[Davidham3](https://github.com/Davidham3)/**[STGCN](https://github.com/Davidham3/STGCN)**
+
 ## Follow us
 
 Knowledge-Precipitation-Tribe
